@@ -19,21 +19,22 @@ body {
 }
 
 nav {
-  box-shadow: 3px 3px 5px white;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
+  box-shadow: 3px 3px 5px white;
 }
+
 nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   font-size: 0.9rem;
   list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: var(--menu-background);
-}
-
-nav li {
-  float: left;
 }
 
 nav li a {
@@ -50,9 +51,17 @@ nav li a:hover {
   color: var(--menu-background);
 }
 
+#intro,
+#myEducation,
+#myProjects,
+#contactMe {
+  height: 70%;
+  width: 100%;
+}
+
 /* Hero Page */
 
-.hero {
+#hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +74,7 @@ nav li a:hover {
   background-size: cover;
 }
 
-.hero h1{
+#hero h1 {
   font-size: 4rem;
   display: flex;
   flex-direction: column;
@@ -73,10 +82,33 @@ nav li a:hover {
   color: var(--mainFontColor);
 }
 
-.hero h2{
+#hero h2 {
   font-size: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--mainFontColor);
+}
+
+#intro {
+  padding-top: 10%;
+}
+
+#aboutMeMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 15%;
+
+}
+
+#myEducation {
+}
+
+#myProjects {
+}
+
+#contactMe {
 }
