@@ -55,7 +55,7 @@ nav li a:hover {
 #myEducation,
 #myProjects,
 #contactMe {
-  height: 70%;
+  height: 100%;
   width: 100%;
 }
 
@@ -101,7 +101,6 @@ nav li a:hover {
   justify-content: center;
   padding-left: 15%;
   padding-right: 15%;
-
 }
 
 #myEducation {
