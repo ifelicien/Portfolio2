@@ -1,0 +1,82 @@
+/* global */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --menu_font: #c0c0c0;
+  --menu-background: #000000;
+  --mainFontColor: #ffffff;
+}
+
+nav {
+  box-shadow: 3px 3px 5px white;
+  position: sticky;
+  top: 0;
+}
+nav ul {
+  font-size: 0.9rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--menu-background);
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: var(--menu_font);
+  text-align: center;
+  padding: 12px 10px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  transition: all 0.7s ease;
+  background-color: var(--menu_font);
+  color: var(--menu-background);
+}
+
+/* Hero Page */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  background: url(./assets/christopher-gower-m_HRfLhgABo-unsplash.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+.hero h1{
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--mainFontColor);
+}
+
+.hero h2{
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--mainFontColor);
+}
