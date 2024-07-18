@@ -13,16 +13,16 @@ body {
 }
 
 :root {
-  --menu_font: #c0c0c0;
-  --menu-background: #000000;
-  --mainFontColor: #ffffff;
+  --menu_font_silver: #c0c0c0;
+  --menu_background_black: #000000;
+  --mainFontColor_white: #ffffff;
 }
 
 nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  box-shadow: 3px 3px 5px white;
+  box-shadow: 3px 3px 5px var(--mainFontColor_white);
 }
 
 nav ul {
@@ -34,12 +34,12 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--menu-background);
+  background-color: var(--menu_background_black);
 }
 
 nav li a {
   display: block;
-  color: var(--menu_font);
+  color: var(--menu_font_silver);
   text-align: center;
   padding: 12px 10px;
   text-decoration: none;
@@ -47,7 +47,7 @@ nav li a {
 
 nav li a:hover {
   transition: all 0.7s ease;
-  background-color: var(--menu_font);
+  background-color: var(--menu_font_silver);
   color: var(--menu-background);
 }
 
@@ -79,7 +79,8 @@ nav li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--mainFontColor);
+  color: var(--mainFontColor_white);
+  box-shadow: 3px 3px 5px var(--menu_background_black);
 }
 
 #hero h2 {
@@ -87,7 +88,8 @@ nav li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--mainFontColor);
+  color: var(--mainFontColor_white);
+  box-shadow: 3px 3px 5px var(--menu_background_black);
 }
 
 #intro {
@@ -111,3 +113,5 @@ nav li a:hover {
 
 #contactMe {
 }
+
+/* fix box shadow on hero */
