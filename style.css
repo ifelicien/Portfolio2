@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html,
@@ -72,6 +73,7 @@ nav li a:hover {
   background: url(./assets/christopher-gower-m_HRfLhgABo-unsplash.jpg) no-repeat
     center;
   background-size: cover;
+  box-shadow: 3px 3px 5px var(--menu_background_black);
 }
 
 #hero h1 {
@@ -89,7 +91,7 @@ nav li a:hover {
   flex-direction: column;
   align-items: center;
   color: var(--mainFontColor_white);
-  box-shadow: 3px 3px 5px var(--menu_background_black);
+  box-shadow: 3px 3px 5px var(--menu_background_black); 
 }
 
 #intro {
